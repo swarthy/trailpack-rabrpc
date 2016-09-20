@@ -1,1 +1,1 @@
-exports.trailpack = require('./trailpack')
+exports.rabrpc = require('./rabrpc')
