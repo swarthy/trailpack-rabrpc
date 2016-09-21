@@ -19,6 +19,10 @@ module.exports = _.defaultsDeep({
         require('trailpack-core'),
         require('../')
       ]
+    },
+    rabrpc: {
+      connection: {},
+      req: 'test'
     }
   }
 }, smokesignals.FailsafeConfig)

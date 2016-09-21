@@ -2,12 +2,12 @@
 
 const assert = require('assert')
 
-describe('Trailpack', () => {
+describe('RabRPC Trailpack', () => {
   let pack
   before(() => {
-    // pack = global.app.packs.waterline
+    pack = global.app.packs.rabrpc
   })
-  it.skip('TODO should be loaded into the app.packs collection', () => {
+  it('TODO should be loaded into the app.packs collection', () => {
     assert(pack)
   })
   describe('#validate', () => {

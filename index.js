@@ -1,28 +1,26 @@
 'use strict'
 
 const Trailpack = require('trailpack')
+const lib = require('./lib')
+const rabrpc = require('rabrpc')
 
 module.exports = class RabrpcTrailpack extends Trailpack {
 
-  /**
-   * TODO document method
-   */
   validate () {
-
+    if (!this.app.config.rabrpc) {
+      return Promise.reject(new Error('rabrpc config is required'))
+    }
+    return Promise.all([
+      lib.Validator.validateRabRPCConfig(this.app.config.rabrpc)
+    ])
   }
 
-  /**
-   * TODO document method
-   */
-  configure () {
-
-  }
-
-  /**
-   * TODO document method
-   */
   initialize () {
+    return rabrpc.configure(this.app.config.rabrpc)
+  }
 
+  unload () {
+    return rabrpc.shutdown()
   }
 
   constructor (app) {
@@ -31,6 +29,7 @@ module.exports = class RabrpcTrailpack extends Trailpack {
       api: require('./api'),
       pkg: require('./package')
     })
+    app.rabrpc = rabrpc
   }
 }
 
