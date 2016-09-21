@@ -27,10 +27,10 @@ module.exports = {
 
 [npm-image]: https://img.shields.io/npm/v/trailpack-rabrpc.svg?style=flat-square
 [npm-url]: https://npmjs.org/package/trailpack-rabrpc
-[ci-image]: https://img.shields.io/travis//trailpack-rabrpc/master.svg?style=flat-square
-[ci-url]: https://travis-ci.org//trailpack-rabrpc
-[daviddm-image]: http://img.shields.io/david//trailpack-rabrpc.svg?style=flat-square
-[daviddm-url]: https://david-dm.org//trailpack-rabrpc
-[codeclimate-image]: https://img.shields.io/codeclimate/github//trailpack-rabrpc.svg?style=flat-square
-[codeclimate-url]: https://codeclimate.com/github//trailpack-rabrpc
+[ci-image]: https://img.shields.io/travis/swarthy/trailpack-rabrpc/master.svg?style=flat-square
+[ci-url]: https://travis-ci.org/swarthy/trailpack-rabrpc
+[daviddm-image]: http://img.shields.io/david/swarthy/trailpack-rabrpc.svg?style=flat-square
+[daviddm-url]: https://david-dm.org/swarthy/trailpack-rabrpc
+[codeclimate-image]: https://img.shields.io/codeclimate/github/swarthy/trailpack-rabrpc.svg?style=flat-square
+[codeclimate-url]: https://codeclimate.com/github/swarthy/trailpack-rabrpc
 
