@@ -16,7 +16,7 @@
     "trailjs"
   ],
   "dependencies": {
-    "rabrpc": "0.1.0",
+    "rabrpc": "^0.1.2",
     "trailpack": "latest"
   },
   "devDependencies": {
