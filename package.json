@@ -1,7 +1,7 @@
 {
   "name": "trailpack-rabrpc",
   "version": "0.0.6",
-  "description": "RabRPC Trailpack",
+  "description": "RabRPC trailpack",
   "homepage": "https://github.com/swarthy/trailpack-rabrpc",
   "author": {
     "name": "Alexander Mochalin",
@@ -16,20 +16,18 @@
     "trailjs"
   ],
   "dependencies": {
+    "es6-error": "^4.0.1",
     "trailpack": "latest"
   },
   "devDependencies": {
-    "lodash": "^4.16.1",
-    "trails": "latest",
-    "eslint": "^3.5",
-    "eslint-config-trails": "^1.0.7",
-    "mocha": "^3.0.2",
-    "rabrpc": "^0.1.3",
-    "smokesignals": "^1.2.2",
-    "trailpack-core": "^1.0.1"
-  },
-  "peerDependencies": {
-    "rabrpc": ">= 0.1"
+    "eslint": "^3.14",
+    "eslint-config-trails": "^2.0.6",
+    "lodash": "^4.17.4",
+    "mocha": "^3.2.0",
+    "rabrpc": "^0.1.5",
+    "smokesignals": "^2.1.0",
+    "trailpack-core": "^2.0.0",
+    "trails": "latest"
   },
   "scripts": {
     "test": "eslint . && mocha"

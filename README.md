@@ -5,12 +5,12 @@
 [![Dependency Status][daviddm-image]][daviddm-url]
 [![Code Climate][codeclimate-image]][codeclimate-url]
 
-RabRPC Trailpack
+RabRPC trailpack
 
 ## Install
 
 ```sh
-$ npm install --save trailpack-rabrpc
+$ npm install --save trailpack-rabrpc rabrpc
 ```
 
 ## Configure

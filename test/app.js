@@ -15,14 +15,12 @@ module.exports = _.defaultsDeep({
   config: {
     main: {
       packs: [
-        smokesignals.Trailpack,
         require('trailpack-core'),
         require('../')
       ]
     },
     rabrpc: {
-      connection: {},
-      req: 'test'
+      connection: {}
     }
   }
 }, smokesignals.FailsafeConfig)

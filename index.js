@@ -17,6 +17,14 @@ module.exports = class RabrpcTrailpack extends Trailpack {
 
   initialize () {
     return rabrpc.configure(this.app.config.rabrpc)
+    .catch(error => {
+      if (typeof error === 'string') {
+        throw new lib.Errors.RabRPCError(error)
+      }
+      else {
+        throw error
+      }
+    })
   }
 
   unload () {
