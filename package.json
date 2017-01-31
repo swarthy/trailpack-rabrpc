@@ -28,6 +28,9 @@
     "smokesignals": "^2.1.0",
     "trails": "latest"
   },
+  "peerDependencies": {
+    "rabrpc": ">= 0.1"
+  },
   "scripts": {
     "test": "eslint . && mocha"
   },
