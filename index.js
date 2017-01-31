@@ -33,7 +33,7 @@ module.exports = class RabrpcTrailpack extends Trailpack {
   }
 
   unload () {
-    return new Promise((resolve, reject) => this.initialized ? rabrpc.shutdown() : undefined)
+    return new Promise(resolve => resolve(this.initialized ? rabrpc.shutdown() : undefined))
   }
 
   constructor (app) {
