@@ -26,7 +26,6 @@
     "mocha": "^3.2.0",
     "rabrpc": "^0.1.5",
     "smokesignals": "^2.1.0",
-    "trailpack-core": "^2.0.0",
     "trails": "latest"
   },
   "scripts": {

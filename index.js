@@ -17,7 +17,12 @@ module.exports = class RabrpcTrailpack extends Trailpack {
 
   initialize () {
     return rabrpc.configure(this.app.config.rabrpc)
+    .then(result => {
+      this.initialized = true
+      return result
+    })
     .catch(error => {
+      this.initialized = false
       if (typeof error === 'string') {
         throw new lib.Errors.RabRPCError(error)
       }
@@ -28,7 +33,7 @@ module.exports = class RabrpcTrailpack extends Trailpack {
   }
 
   unload () {
-    return rabrpc.shutdown()
+    return new Promise((resolve, reject) => this.initialized ? rabrpc.shutdown() : undefined)
   }
 
   constructor (app) {

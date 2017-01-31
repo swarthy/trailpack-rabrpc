@@ -13,9 +13,11 @@ module.exports = _.defaultsDeep({
     services: { }
   },
   config: {
+    log: {
+      logger: new smokesignals.Logger('silly')
+    },
     main: {
       packs: [
-        require('trailpack-core'),
         require('../')
       ]
     },
