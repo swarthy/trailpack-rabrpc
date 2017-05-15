@@ -20,8 +20,7 @@ module.exports = class RabrpcTrailpack extends Trailpack {
   }
 
   unload () {
-    setTimeout(() => process.exit(1), 30000)
-    rabrpc.shutdown()
+    return rabrpc.shutdown()
   }
 
   constructor (app) {
@@ -33,4 +32,3 @@ module.exports = class RabrpcTrailpack extends Trailpack {
     app.rabrpc = rabrpc
   }
 }
-
