@@ -1,6 +1,6 @@
 {
   "name": "trailpack-rabrpc",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "RabRPC trailpack",
   "homepage": "https://github.com/swarthy/trailpack-rabrpc",
   "author": {
@@ -9,7 +9,12 @@
     "url": "https://github.com/trailsjs"
   },
   "main": "index.js",
-  "keywords": ["rabrpc", "trailpack", "trails", "trailjs"],
+  "keywords": [
+    "rabrpc",
+    "trailpack",
+    "trails",
+    "trailjs"
+  ],
   "dependencies": {
     "es6-error": "^4.0.1",
     "trailpack": "^2.1.2"
